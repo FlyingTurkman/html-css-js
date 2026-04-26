@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- form = doldurulacak alanları içeren formun tamamını kapsar -->
+    <!-- form içerisindeki elemanlara name ile alan adı eklenir -->
+    <!-- autocomplete = formun otomatik doldurulmasının açılıp kapatılmasını sağlar -->
+    <!-- onsubmit formun gönderilmesini sağlayan fonksiyonu belirler -->
+    <form
+    autocomplete="off"
+    onsubmit=""
+    >
+        <div>
+            <label>
+                Adınız:
+            </label>
+
+            <!-- minlength = en az girilebilecek karakter sayısını belirler -->
+             <!-- maxlength = en fazla girilebilecek karakter sayısını belirler -->
+            <input
+            type="text"
+            name="name"
+            minlength="3"
+            maxlength="5"
+            />
+        </div>
+        <div>
+            <label>
+                Soyadınız:
+            </label>
+            <input
+            type="text"
+            name="surname"
+            />
+        </div>
+        <div>
+            <label>
+                E-posta Adresiniz:
+            </label>
+            <input
+            type="email"
+            name="email"
+            />
+        </div>
+        <div>
+            <label>
+                Doğum Tarihiniz:
+            </label>
+            <input
+            type="date"
+            name="birthdate"
+            />
+        </div>
+        <div>
+            <label>
+                Cinsiyetiniz:
+            </label>
+            <label>
+                <input
+                type="radio"
+                name="cinsiyet"
+                value="Erkek"
+                />
+                Erkek
+            </label>
+            <label>
+                <input
+                type="radio"
+                name="cinsiyet"
+                value="Kadın"
+                />
+                Kadın
+            </label>
+            <label>
+                <input
+                type="radio"
+                name="cinsiyet"
+                value="Mental-Hasta"
+                />
+                F16
+            </label>
+            <label>
+                <input
+                type="radio"
+                name="cinsiyet"
+                value="Belirtmet İstemiyorum"
+                />
+                Belirtmek İstemiyorum
+            </label>
+        </div>
+        <div>
+            <label>
+                Telefon Numaranız:
+            </label>
+            <input
+            type="tel"
+            name="phone"
+            />
+        </div>
+        <div>
+            <label>
+                <input
+                type="checkbox"
+                name="accept"
+                />
+                Okudum anladım kabul ediyorum
+            </label>
+        </div>
+
+        <!-- select = seçenek seçmene yarar -->
+        <div>
+            <select
+            name="secenekler"
+            >
+                <!-- option = seçenek eklemek için kullanılır
+                value o seçeneğin değerini gösterir -->
+                <option
+                value="1"
+                >
+                    Seçenek 1
+                </option>
+                <option
+                value="2"
+                >
+                    Seçenek 2
+                </option>
+            </select>
+        </div>
+
+        <!-- textarea = Paragraf yazmanı sağlar -->
+        <div>
+            <label>Hakkınızda</label>
+            
+            <textarea></textarea>
+        </div>
+        <!-- submit = formun gönderilmesini sağlar -->
+        <button
+        type="submit"
+        >
+            Gönder
+        </button>
+
+        <!-- reset = formun içerisindeki verileri siler -->
+        <button
+        type="reset"
+        >
+            Reset
+        </button>
+    </form>
+</body>
+</html>

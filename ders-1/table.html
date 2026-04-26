@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+</head>
+<body>
+    
+
+    <!-- table = tablo yapmana yarar -->
+    <table>
+
+        <!-- Tablonun başlığını gösterir -->
+        <thead>
+
+            <!-- tr = tablonun satırıdır -->
+
+            <tr>
+
+                <!-- colspan = soldan sağa kaç hücrelik yer kaplayacağını belirtir -->
+                <!-- row span = yukarıdan aşağıya kaç hücrelik yer kaplayacağını belirtir -->
+                <th
+                style="background-color: black; color: white;"
+                colspan="5"
+                >
+                    Kullanıcı Listesi
+                </th>
+            </tr>
+            <tr>
+
+                <!-- th = tablonun başlık hücresidir -->
+                <th>
+                    Adı Soyadı
+                </th>
+                <th>
+                    Numarası
+                </th>
+                <th>
+                    Cep Telefonu
+                </th>
+                <th>
+                    Adresi
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+
+        <!-- tbody = tablonun ana gövdesi -->
+        <tbody>
+            <tr>
+                <!-- td = tablonun hücresi -->
+                <td>
+                    Ahmet Mehmet
+                </td>
+                <td>
+                    123132
+                </td>
+                <td>
+                    5318798797
+                </td>
+                <td>
+                    Biyerler
+                </td>
+                <td></td>
+            </tr>
+        </tbody>
+
+        <!-- tfoot tablonun en altı -->
+        <tfoot>
+            <tr>
+                <td>
+                    <input
+                    type="text"
+                    />
+                </td>
+                <td>
+                    <input
+                    type="number"
+                    />
+                </td>
+                <td>
+                    <input
+                    type="tel"
+                    />
+                </td>
+                <td>
+                    <textarea></textarea>
+                </td>
+                <td>
+                    <button
+                    type="submit"
+                    >
+                        +
+                    </button>
+                </td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
