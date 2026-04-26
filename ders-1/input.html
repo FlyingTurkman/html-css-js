@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input</title>
+</head>
+<body>
+    <!-- İçerisine yazı yazılır -->
+    <!-- value = input içerisindeki değerdir -->
+    <input
+    value="Yazı buraya yazılır"
+    />
+
+    <!-- Tıklanabilir input -->
+    <input
+    type="button"
+    value="Button Input"
+    />
+
+    <!-- Checkbox input -->
+    <label>
+        <input
+        type="checkbox"
+        />
+        Okudum, anladım kabul ediyorum.
+        <!-- Label içerisine yazılmasının sebebi labela tıklandığında checkboxun aktif olması -->
+    </label>
+
+    <!-- Checkbox örneği -->
+    <div>
+        <label>
+            <input
+            type="checkbox"
+            />
+            Gizlilik sözleşmesini okudum kabul ediyorum
+        </label>
+    </div>
+    <div>
+
+        <!-- id = kimlik numarası -->
+        <input
+        type="checkbox"
+        id="kabul-ediyorum"
+        />
+
+        <!-- for = hangi elementle ilişkili olduğunu gösterir -->
+        <label
+        for="kabul-ediyorum"
+        >
+            Mesafeli satış sözleşmesini kabul ediyorum.
+        </label>
+    </div>
+
+    <!-- Color = renk seçen input -->
+    <div>
+        <input
+        type="color"
+        />
+    </div>
+
+    <!-- Date = tarih seçmek için kullanılır. -->
+    <div>
+        <input
+        type="date"
+        />
+    </div>
+
+    <!-- datetime-local hem tarih hem saat seçmeye yarar -->
+    <div>
+        <input
+        type="datetime-local"
+        />
+    </div>
+
+    <!-- month = yıl ve ay seçimi için kullanılır. -->
+    <div>
+        <input
+        type="month"
+        />
+    </div>
+
+    <!-- time = saat seçimi yaparsınız -->
+    <div>
+        <input
+        type="time"
+        />
+    </div>
+
+    <!-- email = mobil cihazlarda email girişini kolaylaştırır -->
+    <div>
+        <input
+        type="email"
+        />
+    </div>
+
+    <!-- file = dosya seçmek için kullanılır. -->
+    <div>
+        <input
+        type="file"
+        />
+    </div>
+
+    <!-- hidden = gizlenmiş input -->
+    <div>
+        <input
+        type="hidden"
+        />
+    </div>
+
+    <!-- image = resim için kullanılır. Eski tarzdadır -->
+    <div>
+        <input
+        type="image"
+        src="https://www.hepsiburada.com/hayatburada/wp-content/uploads/2021/10/shutterstock_1024133086.jpg"
+        />
+    </div>
+
+    <!-- number = sayı girişi için kullanılır -->
+    <div>
+        <input
+        type="number"
+        value="40"
+        max="100"
+        min="0"
+        step="5"
+        />
+
+        <!-- value = sayı değeridir -->
+        <!-- max = alabileceği en fazla sayı değeridir -->
+        <!-- min = alabileceğin en küçük sayı değeri -->
+        <!-- step = adım sayısıyıdır -->
+    </div>
+
+    <!-- password = şifreli alanlar için kullanılır -->
+    <div>
+        <input
+        type="password"
+        />
+    </div>
+
+    <!-- radio = tekli seçenek seçmek için kullanılır -->
+    <div>
+        <label>
+            <input
+            type="radio"
+            name="cinsiyet"
+            />
+            Erkek
+        </label>
+        <label>
+            <input
+            type="radio"
+            name="cinsiyet"
+            />
+            Kadın
+        </label>
+        <label>
+            <input
+            type="radio"
+            name="cinsiyet"
+            />
+            Belirtmek istemiyorum
+        </label>
+        <!-- name = radio inputlar için grup oluşturur ve tek seçenek seçilmesini sağlar -->
+    </div>
+
+    <!-- range = aralık seçmene yardımcı olur -->
+    <div>
+        <input
+        type="range"
+        min="0"
+        max="100"
+        step="10"
+        />
+
+        <!-- min = range için alabileceğin en küçük -->
+        <!-- max = range için alabileceği en büyük değeri gösterir -->
+        <!-- step = adım sayısını gösterir -->
+    </div>
+
+    <!-- reset = form verilerinin resetlenmesini sağlar. Kullanımı yaygın değildir. -->
+    <div>
+        <input
+        type="reset"
+        value="Resetle"
+        />
+    </div>
+
+    <!-- search = arama terminin girildiği inputtur
+    mobil cihazlarda klavyede büyüteç simgesinin çıkmasını sağlar -->
+    <div>
+        <input
+        type="search"
+        />
+    </div>
+
+    <!-- submit = form verilerinin onaylanmasını sağlar. Kullanımı yaygın değildir. -->
+    <div>
+        <input
+        type="submit"
+        value="Onayla"
+        />
+    </div>
+
+    <!-- tel = telefon numarası çıkmasını sağlar
+    mobil cihazlarda klavyede sadece telefon sayılarının girilmesini sağlar -->
+    <div>
+        <input
+        type="tel"
+        />
+    </div>
+
+    <!-- text = içerisine yazı yazılmasını sağlayan input  -->
+    <div>
+        <input
+        type="text"
+        />
+    </div>
+
+    <!-- url = link girmenizi sağlana input
+    mobil cihazlarda klavyede .com gibi kolay kullanımlar sağlar -->
+    <div>
+        <input
+        type="url"
+        />
+    </div>
+
+    <!-- week = hafta seçimini sağlar -->
+    <div>
+        <input
+        type="week"
+        />
+    </div>
+
+</body>
+</html>
