@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Form</title>
 </head>
 <body>
 
@@ -11,6 +11,7 @@
     <!-- form içerisindeki elemanlara name ile alan adı eklenir -->
     <!-- autocomplete = formun otomatik doldurulmasının açılıp kapatılmasını sağlar -->
     <!-- onsubmit formun gönderilmesini sağlayan fonksiyonu belirler -->
+
     <form
     autocomplete="off"
     onsubmit=""
@@ -21,12 +22,12 @@
             </label>
 
             <!-- minlength = en az girilebilecek karakter sayısını belirler -->
-             <!-- maxlength = en fazla girilebilecek karakter sayısını belirler -->
+            <!-- maxlength = en fazla girilebilecek karakter sayısını belirler -->
             <input
             type="text"
             name="name"
             minlength="3"
-            maxlength="5"
+            maxlength="25"
             />
         </div>
         <div>
@@ -54,6 +55,7 @@
             <input
             type="date"
             name="birthdate"
+            min="2026-04-30"
             />
         </div>
         <div>
@@ -88,7 +90,7 @@
                 <input
                 type="radio"
                 name="cinsiyet"
-                value="Belirtmet İstemiyorum"
+                value="Belirtmek-İstemiyorum"
                 />
                 Belirtmek İstemiyorum
             </label>
@@ -107,6 +109,7 @@
                 <input
                 type="checkbox"
                 name="accept"
+                value="Kabul-Etti"
                 />
                 Okudum anladım kabul ediyorum
             </label>
@@ -117,8 +120,8 @@
             <select
             name="secenekler"
             >
-                <!-- option = seçenek eklemek için kullanılır
-                value o seçeneğin değerini gösterir -->
+                <!-- option = seçenek eklemek için kullanılır -->
+                <!-- value o seçeneğin değerini gösterir -->
                 <option
                 value="1"
                 >

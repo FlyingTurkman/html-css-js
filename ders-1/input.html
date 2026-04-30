@@ -8,20 +8,20 @@
 <body>
     <!-- İçerisine yazı yazılır -->
     <!-- value = input içerisindeki değerdir -->
-     <div>
-         <input
-         value="Yazı buraya yazılır"
-         />
-     </div>
+    <div>
+        <input
+        value="Bu inputun yazısı"
+        />
+    </div>
 
     <!-- Tıklanabilir input -->
-     <div>
+    <div>
         Button input
         <input
         type="button"
-        value="Button Input"
+        value="Bana tıkla"
         />
-     </div>
+    </div>
 
     <!-- Checkbox input -->
      <div>
@@ -38,10 +38,13 @@
     <!-- Checkbox örneği -->
     <div>
         checkbox input
-        <label>
-            <input
-            type="checkbox"
-            />
+        <input
+        id="input1"
+        type="checkbox"
+        />
+        <label
+        for="input1"
+        >
             Gizlilik sözleşmesini okudum kabul ediyorum
         </label>
     </div>
@@ -119,6 +122,7 @@
 
     <!-- hidden = gizlenmiş input -->
     <div>
+        Hidden input
         <input
         type="hidden"
         />
@@ -141,7 +145,7 @@
         value="40"
         max="100"
         min="0"
-        step="5"
+        step="10"
         />
 
         <!-- value = sayı değeridir -->
@@ -190,6 +194,7 @@
         Range input
         <input
         type="range"
+        value="60"
         min="0"
         max="100"
         step="10"
